@@ -14,8 +14,8 @@
 
             list1.Sort();
             list2.Sort();
-            var pairSums = list1.Zip(list2, (x, y) => Math.Abs(x - y));
-            int totalSum = pairSums.Sum();
+            var pairDifferences = list1.Zip(list2, (x, y) => Math.Abs(x - y));
+            int totalSum = pairDifferences.Sum();
 
             Console.WriteLine("[Day 1] Part 1: " + totalSum);
         }
